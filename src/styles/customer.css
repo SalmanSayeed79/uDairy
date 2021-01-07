@@ -1,0 +1,181 @@
+#c_main {
+  width: 100vw;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#c_main h1 {
+  color: lightpink;
+  cursor: pointer;
+  font-size: 3.5rem;
+}
+
+#c_main .register {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#c_main .register h3 {
+  color: lightpink;
+  font-size: 2rem;
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+  cursor: pointer;
+}
+
+#c_main .register h3:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#c_main .register .p_container {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#c_main .register .p_container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#c_main .whole_code {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#c_main .whole_code input {
+  min-width: 5vw;
+  text-align: center;
+  margin-right: 1vw;
+}
+
+#c_main .whole_code button {
+  min-width: 5vw;
+  border: 1px solid lightpink;
+  background-color: lightpink;
+  padding: .3rem .8rem;
+  margin-right: 2vw;
+  margin-left: 2vw;
+}
+
+#c_main .whole_code button:hover {
+  background-color: #fd90a2;
+  cursor: pointer;
+  color: white;
+}
+
+#c_main .whole_code button:focus {
+  outline: none;
+}
+
+#c_main .whole_shop h3 {
+  color: lightpink;
+  font-size: 2rem;
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+  cursor: pointer;
+}
+
+#c_main .whole_shop h3:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#c_main .whole_shop .p_container {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#c_main .whole_cart h3 {
+  color: lightpink;
+  font-size: 2rem;
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+  cursor: pointer;
+}
+
+#c_main .whole_cart h3:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#c_main .whole_cart .p_container {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#c_main .whole_cart .p_container .cart_buy button {
+  background-color: lightpink;
+  border: none;
+  padding: .5rem 1rem;
+  margin-bottom: 5vh;
+}
+
+#c_main .whole_cart .p_container .cart_buy button:hover {
+  background-color: pink;
+  color: white;
+  cursor: pointer;
+}
+
+.show {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+@media all and (max-width: 800px) {
+  #c_main h1 {
+    font-size: 2rem;
+  }
+  #c_main .whole_shop h3, #c_main .whole_cart h3 {
+    font-size: 1.5rem;
+  }
+}
+/*# sourceMappingURL=customer.css.map */

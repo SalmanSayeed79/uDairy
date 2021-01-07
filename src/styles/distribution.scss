@@ -1,0 +1,88 @@
+#d_main{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h1{
+        color: lightgreen;
+        cursor: pointer;
+        font-size: 3.5rem;
+    }
+    .dist_code{
+        display: flex;
+        //flex-direction: column;
+        align-items: center;
+        input{
+            width: 5vw;
+            text-align: center;
+            margin-right: 1vw;
+        }
+        button{
+            min-width: 5vw;
+            border: 1px solid lightgreen;
+    
+            background-color: lightgreen;
+            padding: .3rem .8rem;
+            margin-right: 2vw;
+            margin-left: 2vw;
+            &:hover{
+                background-color:green;
+                cursor: pointer;
+                color: white;
+                
+            }
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+    .pending{
+        h3{
+            color: lightgreen;
+            font-size: 2rem;
+            transition: transform .3s ease;
+            cursor: pointer;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+    .shipped{
+        .p_container{
+            display: none;
+            flex-direction: column;
+        }
+        h3{
+            color: lightgreen;
+            font-size: 2rem;
+            transition: transform .3s ease;
+            cursor: pointer;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+.show{
+    display: flex;
+}
+@media all and (max-width:800px){
+    #d_main{
+       h1{
+        font-size: 2rem;
+       }
+       .pending, .shipped{
+           h3{
+               font-size: 1.5rem;
+               text-align: center;
+           }
+       }
+    }
+    #d_main .dist_code{
+        input{
+            width: 20vw;
+        }
+    }
+}

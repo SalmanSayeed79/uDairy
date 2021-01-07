@@ -1,0 +1,355 @@
+.full {
+  width: 100vw;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.full h1 {
+  font-size: 3rem;
+  letter-spacing: 1px;
+  color: gray;
+}
+
+.full .divisions {
+  width: 90vw;
+  min-height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.full .divisions .production {
+  width: 15vw;
+  height: 50vh;
+  margin-right: 2vw;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+  background-color: lightcoral;
+}
+
+.full .divisions .production:hover {
+  -webkit-transform: translateY(-3vh);
+          transform: translateY(-3vh);
+}
+
+.full .divisions .production h3 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.full .divisions .production p {
+  width: 13vw;
+  text-align: center;
+  margin-bottom: 7vh;
+}
+
+.full .divisions .production button {
+  width: 5vw;
+  height: 5vh;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 1rem;
+}
+
+.full .divisions .production button:hover {
+  background-color: gray;
+  color: white;
+}
+
+.full .divisions .distribution {
+  width: 15vw;
+  height: 50vh;
+  margin-right: 2vw;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+  background-color: lightgreen;
+}
+
+.full .divisions .distribution:hover {
+  -webkit-transform: translateY(-3vh);
+          transform: translateY(-3vh);
+}
+
+.full .divisions .distribution h3 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.full .divisions .distribution p {
+  width: 13vw;
+  text-align: center;
+  margin-bottom: 7vh;
+}
+
+.full .divisions .distribution button {
+  width: 5vw;
+  height: 5vh;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 1rem;
+}
+
+.full .divisions .distribution button:hover {
+  background-color: gray;
+  color: white;
+}
+
+.full .divisions .wholesale {
+  width: 15vw;
+  height: 50vh;
+  margin-right: 2vw;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+  background-color: lightyellow;
+}
+
+.full .divisions .wholesale:hover {
+  -webkit-transform: translateY(-3vh);
+          transform: translateY(-3vh);
+}
+
+.full .divisions .wholesale h3 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.full .divisions .wholesale p {
+  width: 13vw;
+  text-align: center;
+  margin-bottom: 7vh;
+}
+
+.full .divisions .wholesale button {
+  width: 5vw;
+  height: 5vh;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 1rem;
+}
+
+.full .divisions .wholesale button:hover {
+  background-color: gray;
+  color: white;
+}
+
+.full .divisions .retailer {
+  width: 15vw;
+  height: 50vh;
+  margin-right: 2vw;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+  background-color: lightskyblue;
+}
+
+.full .divisions .retailer:hover {
+  -webkit-transform: translateY(-3vh);
+          transform: translateY(-3vh);
+}
+
+.full .divisions .retailer h3 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.full .divisions .retailer p {
+  width: 13vw;
+  text-align: center;
+  margin-bottom: 7vh;
+}
+
+.full .divisions .retailer button {
+  width: 5vw;
+  height: 5vh;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 1rem;
+}
+
+.full .divisions .retailer button:hover {
+  background-color: gray;
+  color: white;
+}
+
+.full .divisions .customer {
+  width: 15vw;
+  height: 50vh;
+  margin-right: 2vw;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+  background-color: #f8c059;
+}
+
+.full .divisions .customer:hover {
+  -webkit-transform: translateY(-3vh);
+          transform: translateY(-3vh);
+}
+
+.full .divisions .customer h3 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.full .divisions .customer p {
+  width: 13vw;
+  text-align: center;
+  margin-bottom: 7vh;
+}
+
+.full .divisions .customer button {
+  width: 5vw;
+  height: 5vh;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 1rem;
+}
+
+.full .divisions .customer button:hover {
+  background-color: gray;
+  color: white;
+}
+
+@media all and (max-width: 800px) {
+  .full h1 {
+    display: none;
+    font-size: 2rem;
+    width: 95vw;
+    margin-bottom: 10vh;
+    margin-top: 1vh;
+  }
+  .full .divisions {
+    width: 100vw;
+  }
+  .full .divisions .production, .full .divisions .distribution, .full .divisions .customer, .full .divisions .wholesale, .full .divisions .retailer {
+    width: 90vw;
+    margin-bottom: 2vh;
+    margin-top: 1vh;
+    height: 15vh;
+  }
+  .full .divisions .production button, .full .divisions .distribution button, .full .divisions .customer button, .full .divisions .wholesale button, .full .divisions .retailer button {
+    padding: .2rem;
+    max-width: 20vw;
+    max-height: 5vh;
+    background-color: whitesmoke;
+  }
+  .full .divisions .production:hover, .full .divisions .distribution:hover, .full .divisions .customer:hover, .full .divisions .wholesale:hover, .full .divisions .retailer:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+  .full .divisions .production h3, .full .divisions .distribution h3, .full .divisions .customer h3, .full .divisions .wholesale h3, .full .divisions .retailer h3 {
+    font-size: 1.8rem;
+  }
+  .full .divisions .production p, .full .divisions .distribution p, .full .divisions .customer p, .full .divisions .wholesale p, .full .divisions .retailer p {
+    display: none;
+  }
+  .full .divisions .production button, .full .divisions .distribution button, .full .divisions .customer button, .full .divisions .wholesale button, .full .divisions .retailer button {
+    width: 30vw;
+  }
+}
+/*# sourceMappingURL=admin.css.map */

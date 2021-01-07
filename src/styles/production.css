@@ -1,0 +1,173 @@
+.production_full {
+  width: 100vw;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.production_full h1 {
+  color: lightcoral;
+  font-size: 3.5rem;
+}
+
+.production_full .p_orders h3, .production_full .p_dairy h3, .production_full .p_milk h3 {
+  cursor: pointer;
+  color: lightsalmon;
+  font-size: 2rem;
+  -webkit-transition: -webkit-transform .2s ease;
+  transition: -webkit-transform .2s ease;
+  transition: transform .2s ease;
+  transition: transform .2s ease, -webkit-transform .2s ease;
+}
+
+.production_full .p_orders h3:hover, .production_full .p_dairy h3:hover, .production_full .p_milk h3:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.production_full .p_orders .p_container {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.production_full .p_milk .p_container {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.production_full .p_dairy .p_container {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.production_full .add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70vw;
+  height: 30vh;
+}
+
+.production_full .add h4 {
+  cursor: pointer;
+  background-color: lightsalmon;
+  padding: .5rem 1rem;
+  color: white;
+  border-radius: 1rem;
+  margin-top: 5vh;
+  margin-bottom: 3vh;
+}
+
+.production_full .add h4:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.production_full .add form {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.production_full .add form input {
+  width: 40vw;
+  text-align: center;
+  margin-bottom: 1vh;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+.production_full .add form input:focus {
+  outline: none;
+}
+
+.production_full .add form .form_buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.production_full .add form .form_buttons button {
+  border: none;
+  background-color: orange;
+  padding: .3rem .8rem;
+  margin-right: 2vw;
+  margin-left: 2vw;
+}
+
+.production_full .add form .form_buttons button:hover {
+  background-color: lightcoral;
+  cursor: pointer;
+  color: white;
+}
+
+.production_full .add form .form_buttons button:focus {
+  outline: none;
+}
+
+.show {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+@media all and (max-width: 800px) {
+  .production_full h1 {
+    font-size: 2rem;
+  }
+  .production_full .p_orders h3, .production_full .p_dairy h3, .production_full .p_milk h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .production_full .add {
+    display: none;
+  }
+}
+/*# sourceMappingURL=production.css.map */

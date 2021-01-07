@@ -1,0 +1,115 @@
+#d_main {
+  width: 100vw;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#d_main h1 {
+  color: lightgreen;
+  cursor: pointer;
+  font-size: 3.5rem;
+}
+
+#d_main .dist_code {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#d_main .dist_code input {
+  width: 5vw;
+  text-align: center;
+  margin-right: 1vw;
+}
+
+#d_main .dist_code button {
+  min-width: 5vw;
+  border: 1px solid lightgreen;
+  background-color: lightgreen;
+  padding: .3rem .8rem;
+  margin-right: 2vw;
+  margin-left: 2vw;
+}
+
+#d_main .dist_code button:hover {
+  background-color: green;
+  cursor: pointer;
+  color: white;
+}
+
+#d_main .dist_code button:focus {
+  outline: none;
+}
+
+#d_main .pending h3 {
+  color: lightgreen;
+  font-size: 2rem;
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+  cursor: pointer;
+}
+
+#d_main .pending h3:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#d_main .shipped .p_container {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#d_main .shipped h3 {
+  color: lightgreen;
+  font-size: 2rem;
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+  cursor: pointer;
+}
+
+#d_main .shipped h3:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media all and (max-width: 800px) {
+  #d_main h1 {
+    font-size: 2rem;
+  }
+  #d_main .pending h3, #d_main .shipped h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  #d_main .dist_code input {
+    width: 20vw;
+  }
+}
+/*# sourceMappingURL=distribution.css.map */

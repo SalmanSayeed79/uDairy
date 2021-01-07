@@ -1,0 +1,259 @@
+.full{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    h1{
+        font-size: 3rem;
+        letter-spacing: 1px;
+        color: gray;
+    }
+
+    .divisions{
+        width: 90vw;
+        min-height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .production{
+            width: 15vw;
+            height: 50vh;
+            margin-right: 2vw;
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            transition: transform .5s ease;
+            &:hover{
+                transform: translateY(-3vh);
+                //transform: scale(1.1);
+            }
+            h3{
+                font-size: 2.5rem;
+                text-align: center;
+            }
+            p{
+                width: 13vw;
+                text-align:center;
+                margin-bottom:7vh;
+                
+            }
+            button{
+                width:5vw;
+                height:5vh;
+                font-size:1rem;
+                cursor:pointer;
+                border:none;
+                border-radius:1rem;
+                &:hover{
+                    background-color:gray;
+                    color:white;
+                }
+            }
+            background-color: lightcoral;
+        }
+        .distribution{
+            width: 15vw;
+            height: 50vh;
+            margin-right: 2vw;
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            transition: transform .5s ease;
+            &:hover{
+                transform: translateY(-3vh);
+                //transform: scale(1.1);
+            }
+            h3{
+                font-size: 2.5rem;
+                text-align: center;
+            }
+            p{
+                width: 13vw;
+                text-align:center;
+                margin-bottom:7vh;
+                
+            }
+            button{
+                width:5vw;
+                height:5vh;
+                font-size:1rem;
+                cursor:pointer;
+                border:none;
+                border-radius:1rem;
+                &:hover{
+                    background-color:gray;
+                    color:white;
+                }
+            }
+            background-color: lightgreen;
+        }
+        .wholesale{
+            width: 15vw;
+            height: 50vh;
+            margin-right: 2vw;
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            transition: transform .5s ease;
+            &:hover{
+                transform: translateY(-3vh);
+                //transform: scale(1.1);
+            }
+            h3{
+                font-size: 2.5rem;
+               text-align: center;
+            }
+            p{
+                width: 13vw;
+                text-align:center;
+                margin-bottom:7vh;
+                
+            }
+            button{
+                width:5vw;
+                height:5vh;
+                font-size:1rem;
+                cursor:pointer;
+                border:none;
+                border-radius:1rem;
+                &:hover{
+                    background-color:gray;
+                    color:white;
+                }
+            }
+            background-color: lightyellow;
+        }
+        .retailer{
+            width: 15vw;
+            height: 50vh;
+            margin-right: 2vw;
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            transition: transform .5s ease;
+            &:hover{
+                transform: translateY(-3vh);
+                //transform: scale(1.1);
+            }
+            h3{
+                font-size: 2.5rem;
+        text-align: center;
+            }
+            p{
+                width: 13vw;
+                text-align:center;
+                margin-bottom:7vh;
+                
+            }
+            button{
+                width:5vw;
+                height:5vh;
+                font-size:1rem;
+                cursor:pointer;
+                border:none;
+                border-radius:1rem;
+                &:hover{
+                    background-color:gray;
+                    color:white;
+                }
+            }
+            background-color: lightskyblue;
+        }
+        .customer{
+            width: 15vw;
+            height: 50vh;
+            margin-right: 2vw;
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            transition: transform .5s ease;
+            &:hover{
+                transform: translateY(-3vh);
+                //transform: scale(1.1);
+            }
+            h3{
+                font-size: 2.5rem;
+                text-align: center;
+            }
+            p{
+                width: 13vw;
+                text-align:center;
+                margin-bottom:7vh;
+                
+            }
+            button{
+                width:5vw;
+                height:5vh;
+                font-size:1rem;
+                cursor:pointer;
+                border:none;
+                border-radius:1rem;
+                &:hover{
+                    background-color:gray;
+                    color:white;
+                }
+            }
+            background-color: rgb(248, 192, 89);
+        }
+    }
+}
+
+
+
+
+
+
+@media all and (max-width:800px){
+    .full{
+        h1{
+            display: none;
+            font-size: 2rem;
+            width: 95vw;
+            margin-bottom: 10vh;
+            margin-top: 1vh;
+        }
+    }
+    .full .divisions{
+        width: 100vw;
+        .production, .distribution, .customer,.wholesale,.retailer{
+            width: 90vw;
+            
+            margin-bottom:2vh;
+            margin-top:1vh;
+            height: 15vh;
+            button{
+                padding: .2rem;
+                max-width: 20vw;
+                max-height: 5vh;
+                background-color: whitesmoke;
+            }
+            &:hover{
+                transform: none;
+            }
+            h3{
+                font-size: 1.8rem;
+            }
+            p{
+               display: none;
+            }
+            button{
+                width: 30vw;
+            }
+        }
+    }
+}

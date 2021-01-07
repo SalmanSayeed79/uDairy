@@ -1,0 +1,114 @@
+#ret_main {
+  width: 100vw;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#ret_main h1 {
+  color: lightskyblue;
+  cursor: pointer;
+  font-size: 3.5rem;
+}
+
+#ret_main .ret_code {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#ret_main .ret_code input {
+  min-width: 5vw;
+  text-align: center;
+  margin-right: 1vw;
+}
+
+#ret_main .ret_code button {
+  min-width: 5vw;
+  border: 1px solid lightskyblue;
+  color: white;
+  background-color: lightskyblue;
+  padding: .3rem .8rem;
+  margin-right: 2vw;
+  margin-left: 2vw;
+}
+
+#ret_main .ret_code button:hover {
+  background-color: lightblue;
+  cursor: pointer;
+  color: black;
+}
+
+#ret_main .ret_code button:focus {
+  outline: none;
+}
+
+#ret_main .sellers h3 {
+  color: lightskyblue;
+  font-size: 2rem;
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+  cursor: pointer;
+}
+
+#ret_main .sellers h3:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#ret_main .sellers .p_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#ret_main .whole_cart h3 {
+  color: lightskyblue;
+  font-size: 2rem;
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+  cursor: pointer;
+}
+
+#ret_main .whole_cart h3:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.show {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+@media all and (max-width: 800px) {
+  #ret_main h1 {
+    font-size: 2rem;
+  }
+  #ret_main .sellers h3 {
+    font-size: 1.5rem;
+  }
+}
+/*# sourceMappingURL=retail.css.map */

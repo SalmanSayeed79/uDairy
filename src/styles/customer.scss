@@ -1,0 +1,126 @@
+#c_main{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    h1{
+        color: lightpink;
+        cursor: pointer;
+        font-size: 3.5rem;
+    }
+    .register{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h3{
+            color: lightpink;
+            font-size: 2rem;
+            transition: transform .3s ease;
+            cursor: pointer;
+            &:hover{
+                transform: scale(1.1);
+            }   
+        }
+        .p_container{
+            display: none;
+            flex-direction: column;
+            form{
+                display: flex;
+                flex-direction: column;
+                input{
+                                    }
+            }
+        }
+    }
+    .whole_code{
+        display: flex;
+        //flex-direction: column;
+        align-items: center;
+        input{
+            min-width: 5vw;
+            text-align: center;
+            margin-right: 1vw;
+        }
+        button{
+            min-width: 5vw;
+            border: 1px solid lightpink;
+    
+            background-color: lightpink;
+            padding: .3rem .8rem;
+            margin-right: 2vw;
+            margin-left: 2vw;
+            &:hover{
+                background-color:rgb(253, 144, 162);
+                cursor: pointer;
+                color: white;
+                
+            }
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+    .whole_shop{
+        
+        h3{
+            color:lightpink;
+            font-size: 2rem;
+            transition: transform .3s ease;
+            cursor: pointer;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+        .p_container{
+            display: none;
+            flex-direction: column;
+        }
+    }
+    .whole_cart{
+        h3{
+            color: lightpink;
+            font-size: 2rem;
+            transition: transform .3s ease;
+            cursor: pointer;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+        .p_container{
+            display: none;
+            flex-direction: column;
+            align-items: center;
+        }
+        .p_container .cart_buy{
+            button{
+                background-color: lightpink;
+                border: none;
+                padding: .5rem 1rem;
+                margin-bottom: 5vh;
+                &:hover{
+                    background-color: pink;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+.show{
+    display: flex !important;
+}
+@media all and (max-width:800px){
+    #c_main{
+        h1{
+            font-size: 2rem;
+        }
+        .whole_shop, .whole_cart{
+            h3{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
