@@ -256,12 +256,121 @@
           transform: scale(1.1);
 }
 
+.sessionals #body {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sessionals #body .malnut, .sessionals #body .women, .sessionals #body .lac, .sessionals #body .land {
+  width: 70vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.sessionals #body .malnut .des, .sessionals #body .women .des, .sessionals #body .lac .des, .sessionals #body .land .des {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.sessionals #body .malnut .des img, .sessionals #body .women .des img, .sessionals #body .lac .des img, .sessionals #body .land .des img {
+  width: 25vw;
+}
+
+.sessionals #body .malnut .des p, .sessionals #body .women .des p, .sessionals #body .lac .des p, .sessionals #body .land .des p {
+  width: 30vw;
+  font-size: 1.3rem;
+}
+
+.sessionals #body .malnut .des p span, .sessionals #body .women .des p span, .sessionals #body .lac .des p span, .sessionals #body .land .des p span {
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: #ff3939;
+}
+
+.sessionals #body .dis {
+  width: 70vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.sessionals #body .dis .des {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.sessionals #body .dis .des img {
+  width: 25vw;
+  margin: 2vh 5vw;
+  margin-bottom: 7vh;
+}
+
+.sessionals #body .dis .des p {
+  width: 30vw;
+  font-size: 1.3rem;
+}
+
+.sessionals #body .dis .des p span {
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: #ff3939;
+}
+
 .questions #body {
   width: 90vw;
   font-size: 1.2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -310,6 +419,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -325,6 +436,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -384,8 +497,8 @@
 }
 
 .questions .socials .facebook img:hover, .questions .socials .linked_in img:hover {
-  -webkit-transform: translateY(-2vh);
-          transform: translateY(-2vh);
+  -webkit-transform: translateY(-0.5vh);
+          transform: translateY(-0.5vh);
 }
 
 .sessionals #body {
@@ -629,6 +742,185 @@
   }
   .questions #body, .sessionals #body {
     font-size: 1rem;
+  }
+  .sessionals #body .malnut, .sessionals #body .lac, .sessionals #body .land {
+    width: 70vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .sessionals #body .malnut h2, .sessionals #body .lac h2, .sessionals #body .land h2 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .sessionals #body .malnut .des, .sessionals #body .lac .des, .sessionals #body .land .des {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .sessionals #body .malnut .des img, .sessionals #body .lac .des img, .sessionals #body .land .des img {
+    width: 40vw;
+  }
+  .sessionals #body .malnut .des p, .sessionals #body .lac .des p, .sessionals #body .land .des p {
+    width: 80vw;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  .sessionals #body .malnut .des p span, .sessionals #body .lac .des p span, .sessionals #body .land .des p span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff3939;
+  }
+  .sessionals #body .women {
+    width: 70vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .sessionals #body .women h2 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .sessionals #body .women .des {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .sessionals #body .women .des img {
+    width: 40vw;
+  }
+  .sessionals #body .women .des p {
+    width: 80vw;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  .sessionals #body .women .des p span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff3939;
+  }
+  .sessionals #body .dis {
+    width: 70vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .sessionals #body .dis h2 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .sessionals #body .dis .des {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .sessionals #body .dis .des img {
+    width: 50vw;
+  }
+  .sessionals #body .dis .des p {
+    width: 80vw;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  .sessionals #body .dis .des p span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff3939;
+  }
+  .questions #body h2 {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+  .questions #body .jaid img, .questions #body .salman img, .questions #body .zarif img, .questions #body .sunjukta img {
+    width: 25vw;
+  }
+  .questions #body .jaid p, .questions #body .salman p, .questions #body .zarif p, .questions #body .sunjukta p {
+    font-size: .8rem;
+  }
+  .questions #body .jaid #post, .questions #body .salman #post, .questions #body .zarif #post, .questions #body .sunjukta #post {
+    font-size: .8rem;
+    margin-bottom: .5rem;
+  }
+  .questions .achievements h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  .questions .socials {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .questions .socials h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  .questions .socials .facebook img, .questions .socials .linked_in img {
+    width: 10vw;
+    margin-bottom: 1rem;
+  }
+  .questions .socials .facebook p, .questions .socials .linked_in p {
+    display: none;
   }
   .courses {
     min-height: 150vh;

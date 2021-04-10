@@ -44,7 +44,7 @@ export default function Home() {
                         <ul>
                             <a href="#navbar" onClick={hideNavbar}><li>Home</li></a>
                             <a href='#courses' onClick={hideNavbar}><li>Products</li></a>
-                            <a href='#sessionals' onClick={hideNavbar}><li>Process</li></a>
+                            <a href='#sessionals' onClick={hideNavbar}><li>Goals</li></a>
                             <a href='#questions' onClick={hideNavbar}><li>About</li></a>
                             <Link to='/shop'><a><li>Shop</li></a></Link>
                         
@@ -114,17 +114,38 @@ export default function Home() {
                     
                 </div>
                 <div className="sessionals" id="sessionals">
-                    <h1>Process</h1>
+                    <h1>Our Goals</h1>
                     <div id="body">
-                        <p>Our aim was to ensure milk for everyone and this new technique has enabled us just to do that. So what is our secret? </p>
-                        <p>Genes responsible for milk production are copied are copied from a cow and transferred to a single-celled microbe, microflora. Microflora are particularly good at producing animal proteins and have a long history of safe use in making ingredients in many foods we eat today. The microflora are given the genetic “blueprint” corresponding to whey and casein proteins, giving it the ability to produce real milk proteins — identical to what cows produce.</p>
-                        <p>Now, as the flora grazes on simple plant-based inputs, it naturally produces milk proteins. To maximize the amount of protein that can be produced to achieve economies of scale (and for the most sustainable process), the flora is grown in large tanks at the optimal temperature, pH, and salinity. By following a strict cleaning regimen for the tanks and ensuring they’re a closed system isolated from the outside world, it is ensured that the proteins are the purest and safest milk proteins in the world.</p>
-                        <p>The proteins have proven to be identical to the ones found in milk. They are Generally Recognized as Safe (GRAS) by the FDA and are some of the purest proteins in the food industry.</p>
-                        <p>As a result, one won’t find the slightest trace of lactose, cholesterol, hormones, antibiotics, or anything else that typically comes along for the ride in cow’s milk.</p>
-                        <p>The result is a protein like no other in the world. It is identical to milk protein, packing more nutrition per gram than anything else we know of, and performs exactly as one would expect in traditional dairy processes. And it is all 100% animal-free.</p>
-                        <p>So we can all continue to enjoy the food we have loved for generations, in a kinder, greener world. That means your favorite butter, yogurt, cheese, milk and more made better - with UDairy.</p>
+                        <div className="malnut">
+                            <h2>Saving children from malnutrition</h2>
+                            <div className="des">
+                                <img src={require('./images/goals/mal.png').default} alt=""/>
+                                <p><span>9.4 Million</span> Children in Bangladesh suffer from malnutrition</p>
+                            </div>
+                        </div>
+                        <div className="women">
+                            <h2>Fighting Calcium deficiency</h2>
+                            <div className="des">
+                                <p><span>44% Women</span> suffer from Calcium deficiency</p>
+                                <img src={require('./images/goals/woman.png').default} alt=""/>
+                            </div>
+                        </div>
+                        <div className="lac">
+                            <h2>Lactose Intolerance</h2>
+                            <div className="des">
+                                <img src={require('./images/goals/lact.png').default} alt=""/>
+                                <p> In Bangladesh, death due to diarrhoea <span>500 per year</span></p>
+                            </div>
+                        </div>
+                        <div className="dis">
+                            <h2>Fighting diseases</h2>
+                            <div className="des">
+                                <img src={require('./images/goals/heart.png').default} alt=""/>
+                                <img src={require('./images/goals/cancer.png').default} alt=""/>
+                            </div>
+                        </div>
                     </div>
-                    <img src={process} id="aboutimage" />
+                    
                     
                 </div>
                 <div className="questions" id="questions">
