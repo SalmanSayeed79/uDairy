@@ -46,7 +46,7 @@ export default function Home() {
                             <a href='#courses' onClick={hideNavbar}><li>Products</li></a>
                             <a href='#sessionals' onClick={hideNavbar}><li>Process</li></a>
                             <a href='#questions' onClick={hideNavbar}><li>About</li></a>
-                            <Link to='/admin'><a><li>Admin</li></a></Link>
+                            <Link to='/shop'><a><li>Shop</li></a></Link>
                         
                         </ul>
                         <i className="material-icons" id="burger" onClick={showNavbar} >menu</i>

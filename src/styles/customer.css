@@ -7,13 +7,65 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+#c_main .shop_header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/shop_bg.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#c_main .shop_header h2 {
+  font-size: 3rem;
+  margin-top: 5vh;
+  color: gray;
+}
+
+#c_main .shop_header h5 {
+  margin-top: 30vh;
+  font-size: 2.5rem;
+  margin-right: 70vw;
+  background-color: lightskyblue;
+  color: white;
+  padding: 0 1.5rem;
+  border-radius: 1rem;
+}
+
+#c_main .shop_header p {
+  font-size: 1.5rem;
+  width: 100vw;
+  margin-left: 20vw;
+}
+
+#c_main .title_photo {
+  width: 100vw;
+  height: 20vh;
+}
+
+#c_main .title_photo img {
+  width: 100vw;
 }
 
 #c_main h1 {
@@ -51,7 +103,9 @@
 }
 
 #c_main .register .p_container {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -85,15 +139,15 @@
 
 #c_main .whole_code button {
   min-width: 5vw;
-  border: 1px solid lightpink;
-  background-color: lightpink;
+  border: 1px solid lightskyblue;
+  background-color: lightskyblue;
   padding: .3rem .8rem;
   margin-right: 2vw;
   margin-left: 2vw;
 }
 
 #c_main .whole_code button:hover {
-  background-color: #fd90a2;
+  background-color: skyblue;
   cursor: pointer;
   color: white;
 }
@@ -103,7 +157,7 @@
 }
 
 #c_main .whole_shop h3 {
-  color: lightpink;
+  color: lightskyblue;
   font-size: 2rem;
   -webkit-transition: -webkit-transform .3s ease;
   transition: -webkit-transform .3s ease;
@@ -118,15 +172,28 @@
 }
 
 #c_main .whole_shop .p_container {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
+#c_main .whole_shop .p_container .milk, #c_main .whole_shop .p_container .milkshake, #c_main .whole_shop .p_container .yogurt, #c_main .whole_shop .p_container .butter {
+  margin-left: 15vw;
+}
+
+#c_main .whole_shop .p_container #title {
+  font-size: 2rem;
+  margin-left: 15vw;
+  color: skyblue;
+  font-weight: bold;
+}
+
 #c_main .whole_cart h3 {
-  color: lightpink;
+  color: lightskyblue;
   font-size: 2rem;
   -webkit-transition: -webkit-transform .3s ease;
   transition: -webkit-transform .3s ease;
@@ -152,14 +219,14 @@
 }
 
 #c_main .whole_cart .p_container .cart_buy button {
-  background-color: lightpink;
+  background-color: lightskyblue;
   border: none;
   padding: .5rem 1rem;
   margin-bottom: 5vh;
 }
 
 #c_main .whole_cart .p_container .cart_buy button:hover {
-  background-color: pink;
+  background-color: skyblue;
   color: white;
   cursor: pointer;
 }
@@ -171,8 +238,28 @@
 }
 
 @media all and (max-width: 800px) {
+  #c_main .shop_header {
+    background-position: left;
+  }
+  #c_main .shop_header h2 {
+    font-size: 2rem;
+  }
+  #c_main .shop_header h5 {
+    font-size: 1.5rem;
+    margin-right: 20vw;
+  }
+  #c_main .shop_header p {
+    font-size: 1.2rem;
+  }
   #c_main h1 {
     font-size: 2rem;
+  }
+  #c_main .whole_shop .p_container .milk, #c_main .whole_shop .p_container .milkshake, #c_main .whole_shop .p_container .butter, #c_main .whole_shop .p_container .yogurt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100vw;
+    overflow-x: scroll;
   }
   #c_main .whole_shop h3, #c_main .whole_cart h3 {
     font-size: 1.5rem;

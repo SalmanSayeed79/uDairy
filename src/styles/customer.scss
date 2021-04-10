@@ -3,9 +3,47 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
-    
+    .shop_header{
+        width: 100vw;
+        height: 100vh;
+        background-image: url('../images/shop_bg.jpg');
+        background-position: center;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        h2{
+            font-size: 3rem;
+            margin-top: 5vh;
+            color: gray;
+            
+        }
+        h5{
+            margin-top: 30vh;
+            font-size: 2.5rem;
+            margin-right: 70vw;
+            background-color:lightskyblue;
+            color: white;
+            padding: 0 1.5rem;
+            border-radius: 1rem;
+            
+        }
+        p{
+            font-size: 1.5rem ;
+            width: 100vw;
+            margin-left: 20vw;
+        }
+    }
+    .title_photo{
+        width: 100vw;
+        height: 20vh;
+        img{
+            width: 100vw;
+        }
+    }
     h1{
         color: lightpink;
         cursor: pointer;
@@ -25,13 +63,13 @@
             }   
         }
         .p_container{
-            display: none;
+            //display: none;
+            display: flex;
             flex-direction: column;
             form{
                 display: flex;
                 flex-direction: column;
-                input{
-                                    }
+               
             }
         }
     }
@@ -46,14 +84,14 @@
         }
         button{
             min-width: 5vw;
-            border: 1px solid lightpink;
+            border: 1px solid lightskyblue;
     
-            background-color: lightpink;
+            background-color: lightskyblue;
             padding: .3rem .8rem;
             margin-right: 2vw;
             margin-left: 2vw;
             &:hover{
-                background-color:rgb(253, 144, 162);
+                background-color:skyblue;
                 cursor: pointer;
                 color: white;
                 
@@ -66,7 +104,7 @@
     .whole_shop{
         
         h3{
-            color:lightpink;
+            color:lightskyblue;
             font-size: 2rem;
             transition: transform .3s ease;
             cursor: pointer;
@@ -75,13 +113,23 @@
             }
         }
         .p_container{
-            display: none;
+            display: flex;
             flex-direction: column;
+            .milk, .milkshake, .yogurt, .butter{
+                margin-left: 15vw ;
+            }
+            #title{
+                font-size: 2rem;
+                margin-left: 15vw ;
+                color: skyblue;
+                font-weight: bold;
+            }
+            
         }
     }
     .whole_cart{
         h3{
-            color: lightpink;
+            color: lightskyblue;
             font-size: 2rem;
             transition: transform .3s ease;
             cursor: pointer;
@@ -96,12 +144,12 @@
         }
         .p_container .cart_buy{
             button{
-                background-color: lightpink;
+                background-color: lightskyblue;
                 border: none;
                 padding: .5rem 1rem;
                 margin-bottom: 5vh;
                 &:hover{
-                    background-color: pink;
+                    background-color: skyblue;
                     color: white;
                     cursor: pointer;
                 }
@@ -114,8 +162,29 @@
 }
 @media all and (max-width:800px){
     #c_main{
+        .shop_header{
+            background-position: left;
+            h2{
+
+                font-size: 2rem;
+            }
+            h5{
+                font-size:1.5rem;
+                margin-right: 20vw;
+            }
+            p{
+                font-size:1.2rem;
+            }
+        }
         h1{
             font-size: 2rem;
+        }
+        .whole_shop .p_container{
+            .milk , .milkshake , .butter ,.yogurt{
+                display: flex;
+                width: 100vw;
+                overflow-x: scroll;
+            }
         }
         .whole_shop, .whole_cart{
             h3{

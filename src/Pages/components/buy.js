@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import '../../styles/shop.css'
 import {db} from '../../firebase'
 
-export default function Dist({name,des,s_code,cart,setCart}) {
+export default function Dist({name,des,s_code,cart,setCart,image}) {
     const [quantity,setQuantity]=useState(1)
 
     function order(e){
@@ -19,11 +19,16 @@ export default function Dist({name,des,s_code,cart,setCart}) {
         // .then(()=>window.location.reload())
         //
      }
-    
+    console.log(image)
     return (
         <div id="shop_main">
         <div className="item">
             <h5>{name}</h5>
+            <div>
+                <img src={require(`../../images/products/${image}.jpg`).default} alt='' width={300}/>
+                
+            </div>
+            
             <p>{des}</p>
             <form id="item_form">
                 <label>Quantity</label>

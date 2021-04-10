@@ -25,7 +25,7 @@ export default function Cart({name,quan,s_code}) {
         <div className="item">
             <h5>{name}</h5>
             <p>Quantity: {quan}</p>
-            
+           
             
             
         {/*Picture*/}

@@ -19,6 +19,7 @@ function App() {
         <Route path='/admin/wholesale' exact component={Wholesale}/>
         <Route path='/admin/retail' exact component={Retail}/>
         <Route path='/admin/customer' exact component={Customer}/>
+        <Route path='/shop' exact component={Customer}/>
       </Switch>
     </BrowserRouter>
     
