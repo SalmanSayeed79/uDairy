@@ -130,13 +130,62 @@ export default function Home() {
                 <div className="questions" id="questions">
                     <h1>About Us</h1>
                     <div id="body">
-                        <p>We are a group of enthusiastic individuals trying to revolutionise the dairy industry of the world. Dairy products have been consumed for generations, but relying on animals to make our food is no longer sustainable. The implications of animal farming are devastating for our planet.</p>
+                        <h2>Meet Our Team</h2>
+                        {/*<p>We are a group of enthusiastic individuals trying to revolutionise the dairy industry of the world. Dairy products have been consumed for generations, but relying on animals to make our food is no longer sustainable. The implications of animal farming are devastating for our planet.</p>
                         <p>We are in need for a food system that takes no more than what our planet can give.</p>
                         <p>If you have ever enjoyed a creamy brie or a sinfully dark chocolate, you have enjoyed the products of microbial fermentation. Here at UDairy, we use milk proteins obtained from the same process – essentially making dairy products with dairy proteins without the need for a single cow.</p>
                         <p>As dairy lovers, we took everything we love about milk, without the downsides. We are creating dairy products with no lactose, hormones, cholesterol or antibiotics, that require 5% of the resources and produce 1% of the waste compared to dairy products made using cow. </p>
-                        <p>Moreover, this helps us to fight against global warming and climate change and make the world a better place to live in. </p>
+                        <p>Moreover, this helps us to fight against global warming and climate change and make the world a better place to live in. </p>*/}
+                        <div className="jaid" id="jaid">
+                            <img src={require("./images/people/jaid.png").default}/>
+                            <p>Jaid Monwar Chowdhury</p>
+                            <p id="post">Chief Executive Officer (CEO)</p>
+                        </div>
+                        <div className="salman">
+                            <img src={require("./images/people/salman.png").default}/>
+                            <p>Salman Sayeed</p>
+                            <p id="post">Chief Technology Officer (CTO)</p>
+                        </div>
+                        <div className="zarif">
+                            <img src={require("./images/people/zarif.png").default}/>
+                            <p>Zarif Ikram</p>
+                            <p id="post">Chief Finance Officer (CFO)</p>
+                        </div>
+                        <div className="sunjukta">
+                            <img src={require("./images/people/sunjukta.png").default}/>
+                            <p>Professor Dr. Sunjukta Ahsan</p>
+                            <p id="post">Advisor(GE Specialist)</p>
+                        </div>
                     </div>
-                    <img src={AboutImg} id="aboutimage"/>
+                    <div className="achievements">
+                        <h2>Our achievements so far</h2>
+                        <div className="buet">
+                            <img src={require("./images/hult-buet.png").default} alt=""/>
+                            <p>Hult prize at BUET</p>
+                            <p id="prize">1st Runners Up</p>
+                        </div>
+                        <div className="regionals">
+                            <img src={require("./images/hult.png").default} alt=""/>
+                            <p>Hult prize Regionals</p>
+                            <p id="prize">1st Runners Up</p>
+                        </div>
+                    
+                    </div>
+                    <div className="socials">
+                        <h2>Follow Our Socials</h2>
+                        <div className="facebook">
+                            <a href="https://www.facebook.com/udairybd" target="_blank"><img src={require("./images/fb.png").default} alt=""/></a>
+                            <p>Facebook</p>
+                          
+                        </div>
+                        <div className="linked_in">
+                            <a href="https://www.linkedin.com/company/udairy/?viewAsMember=true&fbclid=IwAR2ZIxigbmbJQvdYquP3A6yTb4Jj1tKXOGc4UWXB6xdlcf0YQ7_O7FDBh_o" target="_blank"><img src={require("./images/linkedin.png").default} alt=""/></a>
+                            <p>Linked In</p>
+                
+                        </div>
+                    
+                    </div>
+                   
                 </div>
            
                 <div className="footer">
